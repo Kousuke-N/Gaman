@@ -72,7 +72,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-byebug'
-  gem 'rubocop', require: false
+  gem 'rubocop', '~> 0.49.0', require: false
 
   # N+1クエリ検知
   gem 'bullet'

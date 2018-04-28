@@ -1,10 +1,11 @@
-class CreateItems < ActiveRecord::Migration[5.1]
+class CreateItem < ActiveRecord::Migration[5.1]
   def change
-    create_table :items do |t|
+    create_table :item do |t|
 
       t.string :name
-      t.string :description
-      t.string :value
+      t.text :description
+      t.integer :value
+      t.string :url
       t.references :user
 
       t.timestamps
