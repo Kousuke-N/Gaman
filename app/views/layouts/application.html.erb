@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gaman</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <% if user_signed_in? %>
+      <p><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></p>
+    <% end %>
+
+    <%= yield %>
+  </body>
+</html>

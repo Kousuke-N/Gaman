@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: <%= ENV['DATABASE_HOST'] %>
+  user: <%= ENV['DATABASE_USER'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  pool: <%= ENV['MAX_THREADS'] ||  5 %>
+  port: 5432
+
+development: &development
+  <<: *default
+  database: gaman_development
+
+test:
+  <<: *default
+  database: gaman_test
+
+production:
+  <<: *default
+  database: gaman_production
