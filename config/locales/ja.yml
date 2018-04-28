@@ -1,2 +1,10 @@
 ja:
   hello: "Hello world"
+  activerecord:
+    models:
+      item: 欲しいモノ
+    attributes:
+      item:
+        name: 名称
+        description: ほしい理由
+        value: 金額

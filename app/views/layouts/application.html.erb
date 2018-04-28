@@ -9,9 +9,7 @@
   </head>
 
   <body>
-    <% if user_signed_in? %>
-      <p><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></p>
-    <% end %>
+    <%= render 'shared/header_nav' %>
 
     <%= yield %>
   </body>

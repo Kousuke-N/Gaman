@@ -1,0 +1,41 @@
+.sitename{
+  margin:15px 0 15px;
+}
+.sitename a{
+  font-size: 1.6em;
+  color: inherit;
+}
+
+i{
+  font-size: 1.3em;
+  color: inherit;
+}
+
+.navbar {
+  .navbar-inner {
+    padding: 0;
+  }
+
+  .nav {
+    margin: 0;
+    display: table;
+    width: 100%;
+
+    li {
+      display: table-cell;
+      float: none;
+
+      a {
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid rgba(255, 255, 255, .75);
+        border-right: 1px solid rgba(0, 0, 0, .1);
+      }
+    }
+
+    li:last-child a {
+      border-right: 0;
+      border-radius: 0 3px 3px 0;
+    }
+  }
+}
