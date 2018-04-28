@@ -1,0 +1,2 @@
+class Gaman < ApplicationRecord
+end
