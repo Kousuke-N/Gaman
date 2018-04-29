@@ -5,6 +5,7 @@ class GamansController < ApplicationController
   end
 
   def new
+    @gaman = Gaman.all
   end
 
   def create
